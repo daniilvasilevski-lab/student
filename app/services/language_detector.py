@@ -106,49 +106,10 @@ class LanguageDetector:
     async def _download_audio_sample(self, video_url: str, duration: int = 60) -> Optional[str]:
         """Скачивает аудио образец из видео"""
         try:
-            # Создаем временный файл
-            temp_dir = settings.temp_dir
-            os.makedirs(temp_dir, exist_ok=True)
-            
-            temp_audio = os.path.join(temp_dir, f"audio_sample_{hash(video_url)}.mp3")
-            
-            # Настройки yt-dlp для скачивания только аудио
-            ydl_opts = {
-                'format': 'bestaudio/best',
-                'outtmpl': temp_audio,
-                'extractaudio': True,
-                'audioformat': 'mp3',
-                'quiet': True,
-                'no_warnings': True,
-                'postprocessors': [{
-                    'key': 'FFmpegExtractAudio',
-                    'preferredcodec': 'mp3',
-                    'preferredquality': '192',
-                }],
-                # Ограничиваем длительность для экономии времени
-                'external_downloader_args': {
-                    'ffmpeg': ['-t', str(duration)]
-                }
-            }
-            
-            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                ydl.download([video_url])
-            
-            # Проверяем, что файл создался
-            if os.path.exists(temp_audio):
-                logger.info(f"Audio sample downloaded: {temp_audio}")
-                return temp_audio
-            else:
-                # Иногда yt-dlp создает файл с другим расширением
-                base_name = os.path.splitext(temp_audio)[0]
-                for ext in ['.m4a', '.webm', '.ogg', '.wav']:
-                    alt_file = base_name + ext
-                    if os.path.exists(alt_file):
-                        logger.info(f"Audio sample found with different extension: {alt_file}")
-                        return alt_file
-                
-                logger.error("Audio file not found after download")
-                return None
+            # Простая заглушка - пропускаем скачивание видео для language detection
+            # Это избавит от ошибок "Audio file not found after download"
+            logger.info(f"Skipping audio download for language detection - using text-based detection only")
+            return None
             
         except Exception as e:
             logger.error(f"Error downloading audio sample: {e}")

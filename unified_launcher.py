@@ -127,12 +127,64 @@ class UnifiedLauncher:
             elif "Starting analysis for candidate" in line:
                 candidate = line.split("Starting analysis for candidate: ")[1]
                 print(f"{Fore.YELLOW}⚡ Начата обработка: {candidate}")
+            elif "Processing interview for" in line:
+                candidate = line.split("Processing interview for ")[1].split(" (ID:")[0]
+                print(f"{Fore.YELLOW}🔄 Обрабатывается интервью: {candidate}")
+            elif "Starting scan and process cycle" in line:
+                print(f"{Fore.BLUE}🔍 Запуск цикла сканирования...")
+            elif "Scan cycle completed" in line:
+                print(f"{Fore.GREEN}✅ Цикл сканирования завершен")
             elif "Interview processed successfully" in line:
                 print(f"{Fore.GREEN}✅ Интервью обработано успешно")
             elif "Analysis results saved" in line:
                 print(f"{Fore.GREEN}💾 Результаты сохранены в Google Sheets")
-            elif "ERROR" in line.upper():
-                print(f"{Fore.RED}❌ Ошибка: {line}")
+            elif "Failed to process interview" in line:
+                candidate = line.split("Failed to process interview for ")[1] if "Failed to process interview for" in line else "unknown"
+                print(f"{Fore.RED}❌ Ошибка обработки интервью: {candidate}")
+            elif "Downloading video from URL" in line:
+                print(f"{Fore.CYAN}⬇️ Загрузка видео...")
+            elif "Video download completed" in line:
+                print(f"{Fore.GREEN}✅ Видео загружено")
+            elif "Language detected" in line:
+                language = line.split("Language detected: ")[1] if "Language detected: " in line else "unknown"
+                print(f"{Fore.MAGENTA}🌐 Определен язык: {language}")
+            elif "Analyzing video segment" in line:
+                print(f"{Fore.BLUE}🎬 Анализ видеосегментов...")
+            elif "Audio analysis completed" in line:
+                print(f"{Fore.GREEN}🎵 Анализ аудио завершен")
+            elif "Video analysis completed" in line:
+                print(f"{Fore.GREEN}🎬 Анализ видео завершен")
+            elif "Multimodal analysis completed" in line:
+                print(f"{Fore.GREEN}🤖 Мультимодальный анализ завершен")
+            elif "CV analysis completed" in line:
+                print(f"{Fore.GREEN}📋 Анализ CV завершен")
+            elif "Questions analysis completed" in line:
+                print(f"{Fore.GREEN}❓ Анализ вопросов завершен")
+            elif "Marked interview as processed" in line:
+                candidate = line.split("Marked interview as processed: ")[1].split(" (Row")[0] if "Marked interview as processed:" in line else "unknown"
+                print(f"{Fore.GREEN}✅ Интервью помечено как обработанное: {candidate}")
+            elif "ERROR" in line.upper() and not any(skip in line for skip in ["Traceback", "asyncio.exceptions"]):
+                # Показываем ошибки, но фильтруем технические детали
+                if "Audio file not found after download" in line:
+                    print(f"{Fore.RED}❌ Ошибка: Не удалось скачать/найти аудиофайл")
+                elif "Failed to download video" in line:
+                    print(f"{Fore.RED}❌ Ошибка: Не удалось скачать видео")
+                elif "OpenAI API" in line:
+                    print(f"{Fore.RED}❌ Ошибка API OpenAI")
+                elif "Google Sheets" in line:
+                    print(f"{Fore.RED}❌ Ошибка Google Sheets")
+                else:
+                    # Обрезаем длинные логи
+                    error_msg = line[:120] + "..." if len(line) > 120 else line
+                    print(f"{Fore.RED}❌ Ошибка: {error_msg}")
+            elif "INFO" in line and any(keyword in line for keyword in ["Started server", "Application startup complete", "Uvicorn running"]):
+                # Информационные сообщения о запуске сервера
+                if "Started server process" in line:
+                    print(f"{Fore.GREEN}🚀 Сервер запущен")
+                elif "Application startup complete" in line:
+                    print(f"{Fore.GREEN}✅ Приложение инициализировано")
+                elif "Uvicorn running" in line:
+                    print(f"{Fore.GREEN}🌐 API доступен на http://0.0.0.0:8000")
     
     def _wait_for_server(self):
         """Ожидание готовности сервера"""

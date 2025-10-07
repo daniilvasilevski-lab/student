@@ -31,6 +31,14 @@ async def get_scheduler() -> TaskScheduler:
     if global_scheduler is None:
         openai_client = await get_openai_client()
         global_scheduler = await create_task_scheduler(openai_client)
+        
+        # Автоматически запускаем планировщик, если включена автообработка
+        if settings.enable_auto_processing and not global_scheduler.is_running:
+            import asyncio
+            # Запускаем планировщик в фоновом режиме
+            asyncio.create_task(global_scheduler.run_continuous())
+            logger.info("Scheduler started automatically with auto-processing enabled")
+    
     return global_scheduler
 
 
