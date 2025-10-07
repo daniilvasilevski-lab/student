@@ -1,0 +1,461 @@
+2025-10-06 17:30:15,748 - app.main - INFO - Initializing services...
+2025-10-06 17:30:15,769 - app.services.results_sheets_service - WARNING - Google Sheets credentials not found
+2025-10-06 17:30:15,769 - app.main - INFO - Services initialized successfully
+2025-10-06 17:33:22,842 - app.main - INFO - Shutting down services...
+2025-10-06 17:40:29,195 - app.main - INFO - Initializing services...
+2025-10-06 17:40:29,215 - app.services.results_sheets_service - WARNING - Google Sheets credentials not found
+2025-10-06 17:40:29,215 - app.main - INFO - Services initialized successfully
+2025-10-06 17:40:39,755 - app.main - INFO - Shutting down services...
+2025-10-06 17:48:19,312 - app.main - INFO - Initializing services...
+2025-10-06 17:48:19,331 - app.services.results_sheets_service - WARNING - Google Sheets credentials not found
+2025-10-06 17:48:19,331 - app.main - INFO - Services initialized successfully
+2025-10-06 17:48:23,742 - app.main - INFO - Shutting down services...
+2025-10-06 17:51:01,567 - app.main - INFO - Initializing services...
+2025-10-06 17:51:01,585 - app.services.results_sheets_service - WARNING - Google Sheets credentials not found
+2025-10-06 17:51:01,586 - app.main - INFO - Services initialized successfully
+2025-10-06 17:51:09,309 - app.main - INFO - Shutting down services...
+2025-10-06 17:58:11,576 - app.main - INFO - Initializing services...
+2025-10-06 17:58:11,595 - app.services.results_sheets_service - WARNING - Google Sheets credentials not found
+2025-10-06 17:58:11,595 - app.main - INFO - Services initialized successfully
+2025-10-06 17:59:44,825 - app.main - INFO - Shutting down services...
+2025-10-06 18:02:36,727 - app.main - INFO - Initializing services...
+2025-10-06 18:02:36,745 - app.services.results_sheets_service - WARNING - Google Sheets credentials not found
+2025-10-06 18:02:36,745 - app.main - INFO - Services initialized successfully
+2025-10-06 18:14:37,710 - app.main - INFO - Shutting down services...
+2025-10-06 18:14:39,771 - app.main - INFO - Initializing services...
+2025-10-06 18:14:39,790 - app.services.results_sheets_service - WARNING - Google Sheets credentials not found
+2025-10-06 18:14:39,790 - app.main - INFO - Services initialized successfully
+2025-10-06 18:15:01,755 - app.main - INFO - Shutting down services...
+2025-10-06 18:39:23,138 - app.main - INFO - Initializing services...
+2025-10-06 18:39:23,157 - app.services.results_sheets_service - WARNING - Google Sheets credentials not found
+2025-10-06 18:39:23,157 - app.main - INFO - Services initialized successfully
+2025-10-06 18:43:34,084 - app.main - INFO - Shutting down services...
+2025-10-06 18:43:36,238 - app.main - INFO - Initializing services...
+2025-10-06 18:43:37,521 - app.services.results_sheets_service - INFO - Connected to existing Results_ru sheet
+2025-10-06 18:43:38,049 - app.services.results_sheets_service - INFO - Connected to existing Results_en sheet
+2025-10-06 18:43:38,584 - app.services.results_sheets_service - INFO - Connected to existing Results_pl sheet
+2025-10-06 18:43:38,846 - app.services.results_sheets_service - INFO - Results Google Sheets service initialized successfully
+2025-10-06 18:43:38,846 - app.main - INFO - Services initialized successfully
+2025-10-06 18:43:43,460 - app.main - INFO - Shutting down services...
+2025-10-06 18:43:48,024 - app.main - INFO - Initializing services...
+2025-10-06 18:43:49,344 - app.services.results_sheets_service - INFO - Connected to existing Results_ru sheet
+2025-10-06 18:43:50,533 - app.services.results_sheets_service - INFO - Connected to existing Results_en sheet
+2025-10-06 18:43:51,062 - app.services.results_sheets_service - INFO - Connected to existing Results_pl sheet
+2025-10-06 18:43:51,353 - app.services.results_sheets_service - INFO - Results Google Sheets service initialized successfully
+2025-10-06 18:43:51,353 - app.main - INFO - Services initialized successfully
+2025-10-06 18:44:02,153 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 18:44:02,153 - app.services.task_scheduler - INFO - Task scheduler initialized successfully
+2025-10-06 18:44:02,172 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 18:44:03,752 - app.services.interview_processor - INFO - Found unprocessed interview: Daniil Vasilevski (Row 10)
+2025-10-06 18:44:03,752 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 11)
+2025-10-06 18:44:03,752 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 12)
+2025-10-06 18:44:03,752 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 13)
+2025-10-06 18:44:03,752 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 14)
+2025-10-06 18:44:03,753 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 15)
+2025-10-06 18:44:03,753 - app.services.interview_processor - INFO - Found 6 unprocessed interviews
+2025-10-06 18:44:08,799 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 18:44:10,400 - app.services.interview_processor - INFO - Found unprocessed interview: Daniil Vasilevski (Row 10)
+2025-10-06 18:44:10,400 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 11)
+2025-10-06 18:44:10,400 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 12)
+2025-10-06 18:44:10,400 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 13)
+2025-10-06 18:44:10,400 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 14)
+2025-10-06 18:44:10,400 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 15)
+2025-10-06 18:44:10,400 - app.services.interview_processor - INFO - Found 6 unprocessed interviews
+2025-10-06 18:44:15,451 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 18:44:24,813 - app.services.interview_processor - INFO - Found unprocessed interview: Daniil Vasilevski (Row 10)
+2025-10-06 18:44:24,814 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 11)
+2025-10-06 18:44:24,814 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 12)
+2025-10-06 18:44:24,814 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 13)
+2025-10-06 18:44:24,814 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 14)
+2025-10-06 18:44:24,815 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 15)
+2025-10-06 18:44:24,815 - app.services.interview_processor - INFO - Found 6 unprocessed interviews
+2025-10-06 18:44:25,474 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 18:44:27,830 - app.services.interview_processor - INFO - Found unprocessed interview: Daniil Vasilevski (Row 10)
+2025-10-06 18:44:27,831 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 11)
+2025-10-06 18:44:27,831 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 12)
+2025-10-06 18:44:27,831 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 13)
+2025-10-06 18:44:27,831 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 14)
+2025-10-06 18:44:27,831 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 15)
+2025-10-06 18:44:27,831 - app.services.interview_processor - INFO - Found 6 unprocessed interviews
+2025-10-06 18:47:48,162 - app.services.task_scheduler - INFO - Starting continuous task scheduler (interval: 300 seconds)
+2025-10-06 18:47:48,163 - app.services.task_scheduler - INFO - Starting scan and process cycle
+2025-10-06 18:47:48,163 - app.services.interview_processor - INFO - Starting batch processing of unprocessed interviews
+2025-10-06 18:47:50,694 - app.services.interview_processor - INFO - Found unprocessed interview: Daniil Vasilevski (Row 10)
+2025-10-06 18:47:50,694 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 11)
+2025-10-06 18:47:50,700 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 12)
+2025-10-06 18:47:50,700 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 13)
+2025-10-06 18:47:50,700 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 14)
+2025-10-06 18:47:50,700 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 15)
+2025-10-06 18:47:50,700 - app.services.interview_processor - INFO - Found 6 unprocessed interviews
+2025-10-06 18:47:50,701 - app.services.interview_processor - INFO - Processing interview for Daniil Vasilevski (ID: 81fb6d50-c6a8-4b4c-8933-c35d9fb20ae4)
+2025-10-06 18:47:53,109 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:47:53,110 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:47:53,110 - app.services.cv_analyzer - INFO - CV analysis completed for temp_candidate
+2025-10-06 18:47:53,110 - app.services.language_detector - INFO - Detecting language from video: https://storage.googleapis.com/student-interviews-data/student-interviews/81fb6d50-c6a8-4b4c-8933-c35d9fb20ae4/interview.webm?GoogleAccessId=uploader-service%40studenthr.iam.gserviceaccount.com&Expires=1760027192&Signature=LULCU6Vu7a%2BGRSpXXtdkpLrpX30rzzmgu05jBwDGw2i1VHt0VW6YElzAkqpbiDseILDYcqYSHAjcP3O64d9qsW1ik1gF8kTqiYbHj6J1a0N2%2FOfMuv0W867aHFHgZYB7r6q83HUG8PsS5tXLnxLsMli%2BqYwphnhdiYBbxu7%2FUfPQz%2BIFY3i2OugUfDDVcgbA7bUjDPjIBntXWjfMi9uz%2FF62ujA%2FDWivF33KcugBmluy%2BKFlVfZ5CebuOrH5xY7sJRMJYpRGW1XbiVRgEeUZQcouexAEbaF4PM%2F20tE2fzZJRLiBs8EbbuYiy5nbHckptytQcJ%2FJ4U4LO%2F%2BgChDQJQ%3D%3D
+2025-10-06 18:47:55,714 - app.services.language_detector - ERROR - Audio file not found after download
+2025-10-06 18:47:55,715 - app.services.language_detector - WARNING - Could not download audio sample for language detection
+2025-10-06 18:47:55,715 - app.services.interview_processor - WARNING - Could not detect language, defaulting to 'ru'
+2025-10-06 18:47:59,051 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:47:59,052 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:47:59,052 - app.services.cv_analyzer - INFO - CV analysis completed for Daniil Vasilevski
+2025-10-06 18:47:59,053 - app.services.integrated_analyzer - INFO - Starting integrated analysis for Daniil Vasilevski
+2025-10-06 18:47:59,075 - app.services.integrated_analyzer - ERROR - Real processing failed, using fallback: No module named 'aiofiles'
+2025-10-06 18:47:59,075 - app.services.integrated_analyzer - INFO - Starting integrated analysis for Daniil Vasilevski
+2025-10-06 18:47:59,075 - app.services.integrated_analyzer - ERROR - Integrated analysis failed: 'coroutine' object has no attribute 'choices'
+2025-10-06 18:47:59,077 - app.services.interview_processor - ERROR - Error processing interview for Daniil Vasilevski: "InterviewAnalysis" object has no field "interview_language"
+2025-10-06 18:47:59,077 - app.services.interview_processor - ERROR - Failed to process interview for Daniil Vasilevski
+2025-10-06 18:48:01,078 - app.services.interview_processor - INFO - Processing interview for dsfafdasfasdfdaf (ID: 883-767-136)
+2025-10-06 18:48:02,747 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:02,748 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:02,748 - app.services.cv_analyzer - INFO - CV analysis completed for temp_candidate
+2025-10-06 18:48:04,180 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:04,180 - app.services.questions_analyzer - ERROR - GPT questions analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:04,180 - app.services.questions_analyzer - INFO - Questions analysis completed for temp_candidate
+2025-10-06 18:48:04,180 - app.services.language_detector - INFO - Detecting language from video: https://storage.googleapis.com/student-interviews-data/student-interviews/883-767-136/interview.webm?GoogleAccessId=uploader-service%40studenthr.iam.gserviceaccount.com&Expires=1760092870&Signature=QfTRYH6eu6Nu9hxk4jWtW9RpjqXruba%2ByNtywmrSXc%2BimJfRReWX2GxZ5pCQGrIcwwku6IxznvPnYMwaoXvrhdAR6OH6Hj1ek9nhiCqpc7iJe0qudZfAvnZ13KOIDWy2X7CCYR7S4t5LIQgAzjnEm411HBkd%2BCkfvhnm7NJJ3AJTh8ZdcYJX3X%2B8HOdcIhVilbmVAp8ajRZXAxHs3iiMPHGZRax%2FIhAvYuwGy%2BaFh9ahHm4bSrwClxQqkHpAlhB8EPt%2F3EAnZovHNjzBAjc%2B7zKYedS%2BXwSoiXLEpDwJDSrTWafBncXQbpHRspgeZ64Wq1O%2BNoza%2B2iCLdHyxh5b0Q%3D%3D
+2025-10-06 18:48:06,480 - app.services.language_detector - ERROR - Audio file not found after download
+2025-10-06 18:48:06,480 - app.services.language_detector - WARNING - Could not download audio sample for language detection
+2025-10-06 18:48:06,480 - app.services.interview_processor - WARNING - Could not detect language, defaulting to 'ru'
+2025-10-06 18:48:07,837 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:07,838 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:07,839 - app.services.cv_analyzer - INFO - CV analysis completed for dsfafdasfasdfdaf
+2025-10-06 18:48:08,857 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:08,858 - app.services.questions_analyzer - ERROR - GPT questions analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:08,858 - app.services.questions_analyzer - INFO - Questions analysis completed for dsfafdasfasdfdaf
+2025-10-06 18:48:08,859 - app.services.integrated_analyzer - INFO - Starting integrated analysis for dsfafdasfasdfdaf
+2025-10-06 18:48:08,860 - app.services.integrated_analyzer - ERROR - Real processing failed, using fallback: No module named 'aiofiles'
+2025-10-06 18:48:08,860 - app.services.integrated_analyzer - INFO - Starting integrated analysis for dsfafdasfasdfdaf
+2025-10-06 18:48:08,860 - app.services.integrated_analyzer - ERROR - Integrated analysis failed: 'coroutine' object has no attribute 'choices'
+2025-10-06 18:48:08,861 - app.services.interview_processor - ERROR - Error processing interview for dsfafdasfasdfdaf: "InterviewAnalysis" object has no field "interview_language"
+2025-10-06 18:48:08,861 - app.services.interview_processor - ERROR - Failed to process interview for dsfafdasfasdfdaf
+2025-10-06 18:48:10,862 - app.services.interview_processor - INFO - Processing interview for dsaffdsafasdf (ID: 029-635-240)
+2025-10-06 18:48:12,106 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:12,106 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:12,106 - app.services.cv_analyzer - INFO - CV analysis completed for temp_candidate
+2025-10-06 18:48:12,915 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:12,916 - app.services.questions_analyzer - ERROR - GPT questions analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:12,916 - app.services.questions_analyzer - INFO - Questions analysis completed for temp_candidate
+2025-10-06 18:48:12,916 - app.services.language_detector - INFO - Detecting language from video: https://storage.googleapis.com/student-interviews-data/student-interviews/029-635-240/interview.webm?GoogleAccessId=uploader-service%40studenthr.iam.gserviceaccount.com&Expires=1760095114&Signature=pIa2rve0KSSX5VhwcMyMamN1K8Vrns9Nc50mqMcATqSTI0Gz3l4mLlDOm1L9X8Xny%2BdKPR%2F9bWGLi1TCJ03jsrR94KrtJRDfEIIhJej1dWSVDTwVnlcwq8RC2TN%2BX5qbXLQNjouDAXwr8Cobnhj7q2E8LBhOjFERRN%2FwG0%2BkNfx7CJqJEdaWAR3%2FURn0NOvCSH%2BLu5kB0UhfHXVZ%2FV%2B0hj5K1PujleGlzB70YV9e0mcbgi1AHql1IncIPtARxaTKRqEz1t%2B9xkZX8Irf%2FFj4iPXODQH9LaZ1iETCO11xg9zrfxpdZZnMbTNRG844KpsXwCfdgFXO1WtEw92B5nldCw%3D%3D
+2025-10-06 18:48:15,454 - app.services.language_detector - ERROR - Audio file not found after download
+2025-10-06 18:48:15,455 - app.services.language_detector - WARNING - Could not download audio sample for language detection
+2025-10-06 18:48:15,455 - app.services.interview_processor - WARNING - Could not detect language, defaulting to 'ru'
+2025-10-06 18:48:16,535 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:16,536 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:16,536 - app.services.cv_analyzer - INFO - CV analysis completed for dsaffdsafasdf
+2025-10-06 18:48:17,561 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:17,561 - app.services.questions_analyzer - ERROR - GPT questions analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:17,561 - app.services.questions_analyzer - INFO - Questions analysis completed for dsaffdsafasdf
+2025-10-06 18:48:17,561 - app.services.integrated_analyzer - INFO - Starting integrated analysis for dsaffdsafasdf
+2025-10-06 18:48:17,562 - app.services.integrated_analyzer - ERROR - Real processing failed, using fallback: No module named 'aiofiles'
+2025-10-06 18:48:17,562 - app.services.integrated_analyzer - INFO - Starting integrated analysis for dsaffdsafasdf
+2025-10-06 18:48:17,562 - app.services.integrated_analyzer - ERROR - Integrated analysis failed: 'coroutine' object has no attribute 'choices'
+2025-10-06 18:48:17,562 - app.services.interview_processor - ERROR - Error processing interview for dsaffdsafasdf: "InterviewAnalysis" object has no field "interview_language"
+2025-10-06 18:48:17,562 - app.services.interview_processor - ERROR - Failed to process interview for dsaffdsafasdf
+2025-10-06 18:48:19,562 - app.services.interview_processor - INFO - Processing interview for sdafdfasdfasdfasf (ID: 294-218-841)
+2025-10-06 18:48:21,931 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:21,932 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:21,932 - app.services.cv_analyzer - INFO - CV analysis completed for temp_candidate
+2025-10-06 18:48:22,933 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:22,935 - app.services.questions_analyzer - ERROR - GPT questions analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:22,935 - app.services.questions_analyzer - INFO - Questions analysis completed for temp_candidate
+2025-10-06 18:48:22,935 - app.services.language_detector - INFO - Detecting language from video: https://storage.googleapis.com/student-interviews-data/student-interviews/294-218-841/interview.webm?GoogleAccessId=uploader-service%40studenthr.iam.gserviceaccount.com&Expires=1760096521&Signature=3ZCEtHIgkj%2FOTqn4u2EeOAuXzwxOhRmJd2O4xcsCKBXXm9Pz59G4adSSJhF2kJS2ObqsHTxwdpR6y2BsEnfh927XzqxMIXaMklpk1HTvPsQyu3jjEZ5jbz1oMeZtCQq8aS2%2FHOktjO79f61G2zTmOyaADS7cuTMM1rWZkVKQ82mHvi4Lidhto9ihWQcFKEiEEMj4gPmGKFAX3%2F61XGX1hnxpxoieBJVRmBD293lutKu4KpjORkaQzJkN5Rt%2FayRjp%2B4rVVTNrrhplnofyt5khwyi7q%2FCpxl9R21QGbHNjSK%2BYE4hT9dwJ%2FUm9SLN7KGUrSgQ1llwXocdKqrSYkPWJg%3D%3D
+2025-10-06 18:48:26,239 - app.services.language_detector - ERROR - Audio file not found after download
+2025-10-06 18:48:26,239 - app.services.language_detector - WARNING - Could not download audio sample for language detection
+2025-10-06 18:48:26,239 - app.services.interview_processor - WARNING - Could not detect language, defaulting to 'ru'
+2025-10-06 18:48:27,733 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:27,734 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:27,734 - app.services.cv_analyzer - INFO - CV analysis completed for sdafdfasdfasdfasf
+2025-10-06 18:48:28,862 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:28,863 - app.services.questions_analyzer - ERROR - GPT questions analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:28,864 - app.services.questions_analyzer - INFO - Questions analysis completed for sdafdfasdfasdfasf
+2025-10-06 18:48:28,864 - app.services.integrated_analyzer - INFO - Starting integrated analysis for sdafdfasdfasdfasf
+2025-10-06 18:48:28,865 - app.services.integrated_analyzer - ERROR - Real processing failed, using fallback: No module named 'aiofiles'
+2025-10-06 18:48:28,865 - app.services.integrated_analyzer - INFO - Starting integrated analysis for sdafdfasdfasdfasf
+2025-10-06 18:48:28,865 - app.services.integrated_analyzer - ERROR - Integrated analysis failed: 'coroutine' object has no attribute 'choices'
+2025-10-06 18:48:28,866 - app.services.interview_processor - ERROR - Error processing interview for sdafdfasdfasdfasf: "InterviewAnalysis" object has no field "interview_language"
+2025-10-06 18:48:28,866 - app.services.interview_processor - ERROR - Failed to process interview for sdafdfasdfasdfasf
+2025-10-06 18:48:30,866 - app.services.interview_processor - INFO - Processing interview for adsffsfasdf (ID: 411-082-720)
+2025-10-06 18:48:31,975 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:31,976 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:31,977 - app.services.cv_analyzer - INFO - CV analysis completed for temp_candidate
+2025-10-06 18:48:33,047 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:33,048 - app.services.questions_analyzer - ERROR - GPT questions analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:33,048 - app.services.questions_analyzer - INFO - Questions analysis completed for temp_candidate
+2025-10-06 18:48:33,049 - app.services.language_detector - INFO - Detecting language from video: https://storage.googleapis.com/student-interviews-data/student-interviews/411-082-720/interview.webm?GoogleAccessId=uploader-service%40studenthr.iam.gserviceaccount.com&Expires=1760097303&Signature=E%2BFtsK79utIABxg1o47UO6ZJ7yHgspH0f8Pf8IAEUp8lhGk4SeCu2sMJWrp%2FVxZEUb1XRzBUdInlJh%2BRKcHyukfeMk70L3RrYAIag%2FjESg3AEPNrrwj9OKXjVllQBR%2BqBJ1ROmxnKuMmpP%2FQilLoguNEIgOFE4Et07GRFnMZe9qwAn15CO6rRa3L9GNuglr3%2BfpX9A0CEMG05cQ2QTPPdaa6ZEcvgetq4T%2FaDFKcKVLjg3M5uyo661XXUc6PuO4d0lRtnazM4dMkH%2BC%2FM5Wz9JY7OIlZ8FMMH5Whw09FI7n6LhT78TOFfmtweDMVaXzcj0coCYyLIjuSJgxIumb%2BAA%3D%3D
+2025-10-06 18:48:35,863 - app.services.language_detector - ERROR - Audio file not found after download
+2025-10-06 18:48:35,863 - app.services.language_detector - WARNING - Could not download audio sample for language detection
+2025-10-06 18:48:35,863 - app.services.interview_processor - WARNING - Could not detect language, defaulting to 'ru'
+2025-10-06 18:48:37,249 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:37,251 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:37,251 - app.services.cv_analyzer - INFO - CV analysis completed for adsffsfasdf
+2025-10-06 18:48:38,088 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:38,089 - app.services.questions_analyzer - ERROR - GPT questions analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:38,089 - app.services.questions_analyzer - INFO - Questions analysis completed for adsffsfasdf
+2025-10-06 18:48:38,089 - app.services.integrated_analyzer - INFO - Starting integrated analysis for adsffsfasdf
+2025-10-06 18:48:38,090 - app.services.integrated_analyzer - ERROR - Real processing failed, using fallback: No module named 'aiofiles'
+2025-10-06 18:48:38,091 - app.services.integrated_analyzer - INFO - Starting integrated analysis for adsffsfasdf
+2025-10-06 18:48:38,091 - app.services.integrated_analyzer - ERROR - Integrated analysis failed: 'coroutine' object has no attribute 'choices'
+2025-10-06 18:48:38,092 - app.services.interview_processor - ERROR - Error processing interview for adsffsfasdf: "InterviewAnalysis" object has no field "interview_language"
+2025-10-06 18:48:38,092 - app.services.interview_processor - ERROR - Failed to process interview for adsffsfasdf
+2025-10-06 18:48:40,092 - app.services.interview_processor - INFO - Processing interview for asdfasdfsf (ID: 526-854-429)
+2025-10-06 18:48:41,169 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:41,170 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:41,171 - app.services.cv_analyzer - INFO - CV analysis completed for temp_candidate
+2025-10-06 18:48:42,274 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:42,275 - app.services.questions_analyzer - ERROR - GPT questions analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:42,275 - app.services.questions_analyzer - INFO - Questions analysis completed for temp_candidate
+2025-10-06 18:48:42,276 - app.services.language_detector - INFO - Detecting language from video: https://storage.googleapis.com/student-interviews-data/student-interviews/526-854-429/interview.webm?GoogleAccessId=uploader-service%40studenthr.iam.gserviceaccount.com&Expires=1760098310&Signature=48kiNp2i8%2B2c3knSw%2BlAcDSPwdqlI3bX69a7UxhI17HbOX%2BEr7jKew78nqpkXPFg1yWovwRMBb%2BlDVCfjeZZfCuFdxk6YEe6Ha9%2FWPyj9NmA7K9r0eRDqUXBks68kmTcC4p36z6dbqMJWX%2FpSr8rsBKNTi5AcQwCbTAVo4rDrEUUd0vKvhBpIg6nt46Hqpb8DXhKPqmFkCtuNdjQdmGA1jxlFOjcdC2GQsbDcVqoO28CuWQE%2BZUkpcMgjYXTkPESaUDEA96ReblozOzq%2BhnO6ye9gBgf1gRfJw9fJDBZmrDvsTTruwUpoIC9ghQTGGYF3Ov%2FNSTDMitDqDOKqMmHpg%3D%3D
+2025-10-06 18:48:45,519 - app.services.language_detector - ERROR - Audio file not found after download
+2025-10-06 18:48:45,520 - app.services.language_detector - WARNING - Could not download audio sample for language detection
+2025-10-06 18:48:45,520 - app.services.interview_processor - WARNING - Could not detect language, defaulting to 'ru'
+2025-10-06 18:48:46,677 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:46,678 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:46,679 - app.services.cv_analyzer - INFO - CV analysis completed for asdfasdfsf
+2025-10-06 18:48:47,417 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:48:47,418 - app.services.questions_analyzer - ERROR - GPT questions analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:48:47,418 - app.services.questions_analyzer - INFO - Questions analysis completed for asdfasdfsf
+2025-10-06 18:48:47,418 - app.services.integrated_analyzer - INFO - Starting integrated analysis for asdfasdfsf
+2025-10-06 18:48:47,420 - app.services.integrated_analyzer - ERROR - Real processing failed, using fallback: No module named 'aiofiles'
+2025-10-06 18:48:47,420 - app.services.integrated_analyzer - INFO - Starting integrated analysis for asdfasdfsf
+2025-10-06 18:48:47,420 - app.services.integrated_analyzer - ERROR - Integrated analysis failed: 'coroutine' object has no attribute 'choices'
+2025-10-06 18:48:47,421 - app.services.interview_processor - ERROR - Error processing interview for asdfasdfsf: "InterviewAnalysis" object has no field "interview_language"
+2025-10-06 18:48:47,421 - app.services.interview_processor - ERROR - Failed to process interview for asdfasdfsf
+2025-10-06 18:48:49,421 - app.services.interview_processor - INFO - Batch processing completed. Stats: {'found': 6, 'processed': 0, 'failed': 6, 'saved': 0}
+2025-10-06 18:48:49,422 - app.services.task_scheduler - INFO - Scan cycle completed. Stats: {'found': 6, 'processed': 0, 'failed': 6, 'saved': 0}
+2025-10-06 18:48:49,422 - app.services.task_scheduler - INFO - Scan cycle completed. Found: 6, Processed: 0, Failed: 6
+2025-10-06 18:48:49,422 - app.services.task_scheduler - INFO - Waiting 300 seconds until next scan...
+2025-10-06 18:53:37,535 - app.services.task_scheduler - INFO - Received signal 15, shutting down gracefully...
+2025-10-06 18:53:37,536 - app.services.task_scheduler - INFO - Task scheduler cancelled
+2025-10-06 18:53:37,536 - app.services.task_scheduler - INFO - Task scheduler stopped
+2025-10-06 18:53:40,259 - app.main - INFO - Initializing services...
+2025-10-06 18:53:41,416 - app.services.results_sheets_service - INFO - Connected to existing Results_ru sheet
+2025-10-06 18:53:41,959 - app.services.results_sheets_service - INFO - Connected to existing Results_en sheet
+2025-10-06 18:53:42,501 - app.services.results_sheets_service - INFO - Connected to existing Results_pl sheet
+2025-10-06 18:53:42,820 - app.services.results_sheets_service - INFO - Results Google Sheets service initialized successfully
+2025-10-06 18:53:42,820 - app.main - INFO - Services initialized successfully
+2025-10-06 18:54:26,131 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 18:54:26,131 - app.services.task_scheduler - INFO - Task scheduler initialized successfully
+2025-10-06 18:54:26,150 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 18:54:28,496 - app.services.interview_processor - INFO - Found unprocessed interview: Daniil Vasilevski (Row 10)
+2025-10-06 18:54:28,496 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 11)
+2025-10-06 18:54:28,497 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 12)
+2025-10-06 18:54:28,497 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 13)
+2025-10-06 18:54:28,497 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 14)
+2025-10-06 18:54:28,497 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 15)
+2025-10-06 18:54:28,497 - app.services.interview_processor - INFO - Found 6 unprocessed interviews
+2025-10-06 18:54:33,654 - app.services.task_scheduler - INFO - Received signal 2, shutting down gracefully...
+2025-10-06 18:54:47,209 - app.main - INFO - Initializing services...
+2025-10-06 18:54:48,560 - app.services.results_sheets_service - INFO - Connected to existing Results_ru sheet
+2025-10-06 18:54:49,278 - app.services.results_sheets_service - INFO - Connected to existing Results_en sheet
+2025-10-06 18:54:50,147 - app.services.results_sheets_service - INFO - Connected to existing Results_pl sheet
+2025-10-06 18:54:50,436 - app.services.results_sheets_service - INFO - Results Google Sheets service initialized successfully
+2025-10-06 18:54:50,437 - app.main - INFO - Services initialized successfully
+2025-10-06 18:54:50,642 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 18:54:50,642 - app.services.task_scheduler - INFO - Task scheduler initialized successfully
+2025-10-06 18:54:50,642 - app.services.task_scheduler - INFO - Starting continuous task scheduler (interval: 300 seconds)
+2025-10-06 18:54:50,642 - app.services.task_scheduler - INFO - Starting scan and process cycle
+2025-10-06 18:54:50,642 - app.services.interview_processor - INFO - Starting batch processing of unprocessed interviews
+2025-10-06 18:54:52,419 - app.services.interview_processor - INFO - Found unprocessed interview: Daniil Vasilevski (Row 10)
+2025-10-06 18:54:52,419 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 11)
+2025-10-06 18:54:52,419 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 12)
+2025-10-06 18:54:52,419 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 13)
+2025-10-06 18:54:52,419 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 14)
+2025-10-06 18:54:52,419 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 15)
+2025-10-06 18:54:52,420 - app.services.interview_processor - INFO - Found 6 unprocessed interviews
+2025-10-06 18:54:52,420 - app.services.interview_processor - INFO - Processing interview for Daniil Vasilevski (ID: 81fb6d50-c6a8-4b4c-8933-c35d9fb20ae4)
+2025-10-06 18:54:52,464 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 18:54:53,713 - app.services.interview_processor - INFO - Found unprocessed interview: Daniil Vasilevski (Row 10)
+2025-10-06 18:54:53,714 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 11)
+2025-10-06 18:54:53,714 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 12)
+2025-10-06 18:54:53,714 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 13)
+2025-10-06 18:54:53,714 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 14)
+2025-10-06 18:54:53,714 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 15)
+2025-10-06 18:54:53,715 - app.services.interview_processor - INFO - Found 6 unprocessed interviews
+2025-10-06 18:54:55,521 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:54:55,523 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:54:55,523 - app.services.cv_analyzer - INFO - CV analysis completed for temp_candidate
+2025-10-06 18:54:55,523 - app.services.language_detector - INFO - Detecting language from video: https://storage.googleapis.com/student-interviews-data/student-interviews/81fb6d50-c6a8-4b4c-8933-c35d9fb20ae4/interview.webm?GoogleAccessId=uploader-service%40studenthr.iam.gserviceaccount.com&Expires=1760027192&Signature=LULCU6Vu7a%2BGRSpXXtdkpLrpX30rzzmgu05jBwDGw2i1VHt0VW6YElzAkqpbiDseILDYcqYSHAjcP3O64d9qsW1ik1gF8kTqiYbHj6J1a0N2%2FOfMuv0W867aHFHgZYB7r6q83HUG8PsS5tXLnxLsMli%2BqYwphnhdiYBbxu7%2FUfPQz%2BIFY3i2OugUfDDVcgbA7bUjDPjIBntXWjfMi9uz%2FF62ujA%2FDWivF33KcugBmluy%2BKFlVfZ5CebuOrH5xY7sJRMJYpRGW1XbiVRgEeUZQcouexAEbaF4PM%2F20tE2fzZJRLiBs8EbbuYiy5nbHckptytQcJ%2FJ4U4LO%2F%2BgChDQJQ%3D%3D
+2025-10-06 18:54:58,982 - app.services.language_detector - ERROR - Audio file not found after download
+2025-10-06 18:54:58,983 - app.services.language_detector - WARNING - Could not download audio sample for language detection
+2025-10-06 18:54:58,983 - app.services.interview_processor - WARNING - Could not detect language, defaulting to 'ru'
+2025-10-06 18:54:59,003 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 18:55:00,333 - app.services.interview_processor - INFO - Found unprocessed interview: Daniil Vasilevski (Row 10)
+2025-10-06 18:55:00,333 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 11)
+2025-10-06 18:55:00,335 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 12)
+2025-10-06 18:55:00,335 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 13)
+2025-10-06 18:55:00,335 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 14)
+2025-10-06 18:55:00,336 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 15)
+2025-10-06 18:55:00,336 - app.services.interview_processor - INFO - Found 6 unprocessed interviews
+2025-10-06 18:55:01,873 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:55:01,874 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:55:01,874 - app.services.cv_analyzer - INFO - CV analysis completed for Daniil Vasilevski
+2025-10-06 18:55:01,874 - app.services.integrated_analyzer - INFO - Starting integrated analysis for Daniil Vasilevski
+2025-10-06 18:55:01,893 - app.services.integrated_analyzer - ERROR - Real processing failed, using fallback: No module named 'aiofiles'
+2025-10-06 18:55:01,894 - app.services.integrated_analyzer - INFO - Starting integrated analysis for Daniil Vasilevski
+2025-10-06 18:55:01,894 - app.services.integrated_analyzer - ERROR - Integrated analysis failed: 'coroutine' object has no attribute 'choices'
+2025-10-06 18:55:01,894 - app.services.interview_processor - ERROR - Error processing interview for Daniil Vasilevski: "InterviewAnalysis" object has no field "interview_language"
+2025-10-06 18:55:01,895 - app.services.interview_processor - ERROR - Failed to process interview for Daniil Vasilevski
+2025-10-06 18:55:03,564 - app.services.task_scheduler - INFO - Received signal 2, shutting down gracefully...
+2025-10-06 18:55:03,565 - app.services.task_scheduler - INFO - Task scheduler cancelled
+2025-10-06 18:55:03,565 - app.services.task_scheduler - INFO - Task scheduler stopped
+2025-10-06 18:55:03,570 - app.services.task_scheduler - INFO - Received signal 15, shutting down gracefully...
+2025-10-06 18:56:05,006 - app.main - INFO - Initializing services...
+2025-10-06 18:56:06,595 - app.services.results_sheets_service - INFO - Connected to existing Results_ru sheet
+2025-10-06 18:56:07,312 - app.services.results_sheets_service - INFO - Connected to existing Results_en sheet
+2025-10-06 18:56:07,879 - app.services.results_sheets_service - INFO - Connected to existing Results_pl sheet
+2025-10-06 18:56:08,336 - app.services.results_sheets_service - INFO - Results Google Sheets service initialized successfully
+2025-10-06 18:56:08,336 - app.main - INFO - Services initialized successfully
+2025-10-06 18:56:08,416 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 18:56:08,416 - app.services.task_scheduler - INFO - Task scheduler initialized successfully
+2025-10-06 18:56:08,416 - app.services.task_scheduler - INFO - Starting continuous task scheduler (interval: 300 seconds)
+2025-10-06 18:56:08,416 - app.services.task_scheduler - INFO - Starting scan and process cycle
+2025-10-06 18:56:08,416 - app.services.interview_processor - INFO - Starting batch processing of unprocessed interviews
+2025-10-06 18:56:09,795 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 2)
+2025-10-06 18:56:09,795 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 3)
+2025-10-06 18:56:09,795 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 4)
+2025-10-06 18:56:09,795 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 5)
+2025-10-06 18:56:09,795 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 6)
+2025-10-06 18:56:09,795 - app.services.interview_processor - INFO - Found 5 unprocessed interviews
+2025-10-06 18:56:09,795 - app.services.interview_processor - INFO - Processing interview for dsfafdasfasdfdaf (ID: 883-767-136)
+2025-10-06 18:56:09,834 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 18:56:11,510 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 2)
+2025-10-06 18:56:11,510 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 3)
+2025-10-06 18:56:11,510 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 4)
+2025-10-06 18:56:11,510 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 5)
+2025-10-06 18:56:11,510 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 6)
+2025-10-06 18:56:11,510 - app.services.interview_processor - INFO - Found 5 unprocessed interviews
+2025-10-06 18:56:13,355 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:56:13,356 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:56:13,357 - app.services.cv_analyzer - INFO - CV analysis completed for temp_candidate
+2025-10-06 18:56:14,459 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:56:14,460 - app.services.questions_analyzer - ERROR - GPT questions analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:56:14,461 - app.services.questions_analyzer - INFO - Questions analysis completed for temp_candidate
+2025-10-06 18:56:14,461 - app.services.language_detector - INFO - Detecting language from video: https://storage.googleapis.com/student-interviews-data/student-interviews/883-767-136/interview.webm?GoogleAccessId=uploader-service%40studenthr.iam.gserviceaccount.com&Expires=1760092870&Signature=QfTRYH6eu6Nu9hxk4jWtW9RpjqXruba%2ByNtywmrSXc%2BimJfRReWX2GxZ5pCQGrIcwwku6IxznvPnYMwaoXvrhdAR6OH6Hj1ek9nhiCqpc7iJe0qudZfAvnZ13KOIDWy2X7CCYR7S4t5LIQgAzjnEm411HBkd%2BCkfvhnm7NJJ3AJTh8ZdcYJX3X%2B8HOdcIhVilbmVAp8ajRZXAxHs3iiMPHGZRax%2FIhAvYuwGy%2BaFh9ahHm4bSrwClxQqkHpAlhB8EPt%2F3EAnZovHNjzBAjc%2B7zKYedS%2BXwSoiXLEpDwJDSrTWafBncXQbpHRspgeZ64Wq1O%2BNoza%2B2iCLdHyxh5b0Q%3D%3D
+2025-10-06 18:56:17,403 - app.services.language_detector - ERROR - Audio file not found after download
+2025-10-06 18:56:17,404 - app.services.language_detector - WARNING - Could not download audio sample for language detection
+2025-10-06 18:56:17,404 - app.services.interview_processor - WARNING - Could not detect language, defaulting to 'ru'
+2025-10-06 18:56:17,424 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 18:56:18,884 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 2)
+2025-10-06 18:56:18,884 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 3)
+2025-10-06 18:56:18,884 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 4)
+2025-10-06 18:56:18,884 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 5)
+2025-10-06 18:56:18,884 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 6)
+2025-10-06 18:56:18,884 - app.services.interview_processor - INFO - Found 5 unprocessed interviews
+2025-10-06 18:56:20,311 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:56:20,312 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:56:20,312 - app.services.cv_analyzer - INFO - CV analysis completed for dsfafdasfasdfdaf
+2025-10-06 18:56:21,461 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:56:21,462 - app.services.questions_analyzer - ERROR - GPT questions analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:56:21,462 - app.services.questions_analyzer - INFO - Questions analysis completed for dsfafdasfasdfdaf
+2025-10-06 18:56:21,462 - app.services.integrated_analyzer - INFO - Starting integrated analysis for dsfafdasfasdfdaf
+2025-10-06 18:56:21,492 - app.services.integrated_analyzer - ERROR - Real processing failed, using fallback: No module named 'aiofiles'
+2025-10-06 18:56:21,492 - app.services.integrated_analyzer - INFO - Starting integrated analysis for dsfafdasfasdfdaf
+2025-10-06 18:56:21,492 - app.services.integrated_analyzer - ERROR - Integrated analysis failed: 'coroutine' object has no attribute 'choices'
+2025-10-06 18:56:21,493 - app.services.interview_processor - ERROR - Error processing interview for dsfafdasfasdfdaf: "InterviewAnalysis" object has no field "interview_language"
+2025-10-06 18:56:21,493 - app.services.interview_processor - ERROR - Failed to process interview for dsfafdasfasdfdaf
+2025-10-06 18:56:23,493 - app.services.interview_processor - INFO - Processing interview for dsaffdsafasdf (ID: 029-635-240)
+2025-10-06 18:56:23,922 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 18:56:25,278 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 2)
+2025-10-06 18:56:25,278 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 3)
+2025-10-06 18:56:25,278 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 4)
+2025-10-06 18:56:25,278 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 5)
+2025-10-06 18:56:25,278 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 6)
+2025-10-06 18:56:25,278 - app.services.interview_processor - INFO - Found 5 unprocessed interviews
+2025-10-06 18:56:26,073 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:56:26,074 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:56:26,074 - app.services.cv_analyzer - INFO - CV analysis completed for temp_candidate
+2025-10-06 18:56:26,757 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:56:26,758 - app.services.questions_analyzer - ERROR - GPT questions analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:56:26,758 - app.services.questions_analyzer - INFO - Questions analysis completed for temp_candidate
+2025-10-06 18:56:26,759 - app.services.language_detector - INFO - Detecting language from video: https://storage.googleapis.com/student-interviews-data/student-interviews/029-635-240/interview.webm?GoogleAccessId=uploader-service%40studenthr.iam.gserviceaccount.com&Expires=1760095114&Signature=pIa2rve0KSSX5VhwcMyMamN1K8Vrns9Nc50mqMcATqSTI0Gz3l4mLlDOm1L9X8Xny%2BdKPR%2F9bWGLi1TCJ03jsrR94KrtJRDfEIIhJej1dWSVDTwVnlcwq8RC2TN%2BX5qbXLQNjouDAXwr8Cobnhj7q2E8LBhOjFERRN%2FwG0%2BkNfx7CJqJEdaWAR3%2FURn0NOvCSH%2BLu5kB0UhfHXVZ%2FV%2B0hj5K1PujleGlzB70YV9e0mcbgi1AHql1IncIPtARxaTKRqEz1t%2B9xkZX8Irf%2FFj4iPXODQH9LaZ1iETCO11xg9zrfxpdZZnMbTNRG844KpsXwCfdgFXO1WtEw92B5nldCw%3D%3D
+2025-10-06 18:56:30,263 - app.services.language_detector - ERROR - Audio file not found after download
+2025-10-06 18:56:30,263 - app.services.language_detector - WARNING - Could not download audio sample for language detection
+2025-10-06 18:56:30,263 - app.services.interview_processor - WARNING - Could not detect language, defaulting to 'ru'
+2025-10-06 18:56:30,304 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 18:56:31,906 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 2)
+2025-10-06 18:56:31,906 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 3)
+2025-10-06 18:56:31,906 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 4)
+2025-10-06 18:56:31,906 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 5)
+2025-10-06 18:56:31,906 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 6)
+2025-10-06 18:56:31,907 - app.services.interview_processor - INFO - Found 5 unprocessed interviews
+2025-10-06 18:56:32,855 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:56:32,856 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:56:32,856 - app.services.cv_analyzer - INFO - CV analysis completed for dsaffdsafasdf
+2025-10-06 18:56:33,602 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:56:33,603 - app.services.questions_analyzer - ERROR - GPT questions analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:56:33,603 - app.services.questions_analyzer - INFO - Questions analysis completed for dsaffdsafasdf
+2025-10-06 18:56:33,603 - app.services.integrated_analyzer - INFO - Starting integrated analysis for dsaffdsafasdf
+2025-10-06 18:56:33,604 - app.services.integrated_analyzer - ERROR - Real processing failed, using fallback: No module named 'aiofiles'
+2025-10-06 18:56:33,604 - app.services.integrated_analyzer - INFO - Starting integrated analysis for dsaffdsafasdf
+2025-10-06 18:56:33,605 - app.services.integrated_analyzer - ERROR - Integrated analysis failed: 'coroutine' object has no attribute 'choices'
+2025-10-06 18:56:33,606 - app.services.interview_processor - ERROR - Error processing interview for dsaffdsafasdf: "InterviewAnalysis" object has no field "interview_language"
+2025-10-06 18:56:33,606 - app.services.interview_processor - ERROR - Failed to process interview for dsaffdsafasdf
+2025-10-06 18:56:35,606 - app.services.interview_processor - INFO - Processing interview for sdafdfasdfasdfasf (ID: 294-218-841)
+2025-10-06 18:56:37,014 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 18:56:38,341 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 2)
+2025-10-06 18:56:38,341 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 3)
+2025-10-06 18:56:38,341 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 4)
+2025-10-06 18:56:38,342 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 5)
+2025-10-06 18:56:38,342 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 6)
+2025-10-06 18:56:38,342 - app.services.interview_processor - INFO - Found 5 unprocessed interviews
+2025-10-06 18:56:38,631 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:56:38,632 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:56:38,632 - app.services.cv_analyzer - INFO - CV analysis completed for temp_candidate
+2025-10-06 18:56:40,173 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:56:40,174 - app.services.questions_analyzer - ERROR - GPT questions analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:56:40,174 - app.services.questions_analyzer - INFO - Questions analysis completed for temp_candidate
+2025-10-06 18:56:40,174 - app.services.language_detector - INFO - Detecting language from video: https://storage.googleapis.com/student-interviews-data/student-interviews/294-218-841/interview.webm?GoogleAccessId=uploader-service%40studenthr.iam.gserviceaccount.com&Expires=1760096521&Signature=3ZCEtHIgkj%2FOTqn4u2EeOAuXzwxOhRmJd2O4xcsCKBXXm9Pz59G4adSSJhF2kJS2ObqsHTxwdpR6y2BsEnfh927XzqxMIXaMklpk1HTvPsQyu3jjEZ5jbz1oMeZtCQq8aS2%2FHOktjO79f61G2zTmOyaADS7cuTMM1rWZkVKQ82mHvi4Lidhto9ihWQcFKEiEEMj4gPmGKFAX3%2F61XGX1hnxpxoieBJVRmBD293lutKu4KpjORkaQzJkN5Rt%2FayRjp%2B4rVVTNrrhplnofyt5khwyi7q%2FCpxl9R21QGbHNjSK%2BYE4hT9dwJ%2FUm9SLN7KGUrSgQ1llwXocdKqrSYkPWJg%3D%3D
+2025-10-06 18:56:43,371 - app.services.language_detector - ERROR - Audio file not found after download
+2025-10-06 18:56:43,371 - app.services.language_detector - WARNING - Could not download audio sample for language detection
+2025-10-06 18:56:43,371 - app.services.interview_processor - WARNING - Could not detect language, defaulting to 'ru'
+2025-10-06 18:56:43,393 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 18:56:44,688 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 2)
+2025-10-06 18:56:44,688 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 3)
+2025-10-06 18:56:44,688 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 4)
+2025-10-06 18:56:44,689 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 5)
+2025-10-06 18:56:44,689 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 6)
+2025-10-06 18:56:44,689 - app.services.interview_processor - INFO - Found 5 unprocessed interviews
+2025-10-06 18:56:46,519 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:56:46,521 - app.services.cv_analyzer - ERROR - GPT CV analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:56:46,521 - app.services.cv_analyzer - INFO - CV analysis completed for sdafdfasdfasdfasf
+2025-10-06 18:56:48,001 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-06 18:56:48,002 - app.services.questions_analyzer - ERROR - GPT questions analysis failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-******************************************************Hqrb. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-06 18:56:48,002 - app.services.questions_analyzer - INFO - Questions analysis completed for sdafdfasdfasdfasf
+2025-10-06 18:56:48,002 - app.services.integrated_analyzer - INFO - Starting integrated analysis for sdafdfasdfasdfasf
+2025-10-06 18:56:48,003 - app.services.integrated_analyzer - ERROR - Real processing failed, using fallback: No module named 'aiofiles'
+2025-10-06 18:56:48,003 - app.services.integrated_analyzer - INFO - Starting integrated analysis for sdafdfasdfasdfasf
+2025-10-06 18:56:48,004 - app.services.integrated_analyzer - ERROR - Integrated analysis failed: 'coroutine' object has no attribute 'choices'
+2025-10-06 18:56:48,004 - app.services.interview_processor - ERROR - Error processing interview for sdafdfasdfasdfasf: "InterviewAnalysis" object has no field "interview_language"
+2025-10-06 18:56:48,005 - app.services.interview_processor - ERROR - Failed to process interview for sdafdfasdfasdfasf
+2025-10-06 18:56:49,184 - app.services.task_scheduler - INFO - Received signal 2, shutting down gracefully...
+2025-10-06 18:56:49,184 - app.services.task_scheduler - INFO - Task scheduler cancelled
+2025-10-06 18:56:49,185 - app.services.task_scheduler - INFO - Task scheduler stopped
+2025-10-06 18:56:49,189 - app.services.task_scheduler - INFO - Received signal 15, shutting down gracefully...
+2025-10-06 19:05:51,099 - app.main - INFO - Initializing services...
+2025-10-06 19:05:52,501 - app.services.results_sheets_service - INFO - Connected to existing Results_ru sheet
+2025-10-06 19:05:53,869 - app.services.results_sheets_service - INFO - Connected to existing Results_en sheet
+2025-10-06 19:05:54,688 - app.services.results_sheets_service - INFO - Connected to existing Results_pl sheet
+2025-10-06 19:05:55,712 - app.services.results_sheets_service - INFO - Results Google Sheets service initialized successfully
+2025-10-06 19:05:55,712 - app.main - INFO - Services initialized successfully
+2025-10-06 19:05:56,514 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 19:05:56,514 - app.services.task_scheduler - INFO - Task scheduler initialized successfully
+2025-10-06 19:05:56,514 - app.services.task_scheduler - INFO - Starting continuous task scheduler (interval: 300 seconds)
+2025-10-06 19:05:56,514 - app.services.task_scheduler - INFO - Starting scan and process cycle
+2025-10-06 19:05:56,515 - app.services.interview_processor - INFO - Starting batch processing of unprocessed interviews
+2025-10-06 19:05:58,826 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 2)
+2025-10-06 19:05:58,826 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 3)
+2025-10-06 19:05:58,826 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 4)
+2025-10-06 19:05:58,826 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 5)
+2025-10-06 19:05:58,826 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 6)
+2025-10-06 19:05:58,826 - app.services.interview_processor - INFO - Found 5 unprocessed interviews
+2025-10-06 19:05:58,826 - app.services.interview_processor - INFO - Processing interview for dsfafdasfasdfdaf (ID: 883-767-136)
+2025-10-06 19:05:58,866 - app.services.interview_processor - INFO - Google Sheets connection established
+2025-10-06 19:06:01,857 - app.services.interview_processor - INFO - Found unprocessed interview: dsfafdasfasdfdaf (Row 2)
+2025-10-06 19:06:01,857 - app.services.interview_processor - INFO - Found unprocessed interview: dsaffdsafasdf (Row 3)
+2025-10-06 19:06:01,857 - app.services.interview_processor - INFO - Found unprocessed interview: sdafdfasdfasdfasf (Row 4)
+2025-10-06 19:06:01,857 - app.services.interview_processor - INFO - Found unprocessed interview: adsffsfasdf (Row 5)
+2025-10-06 19:06:01,857 - app.services.interview_processor - INFO - Found unprocessed interview: asdfasdfsf (Row 6)
+2025-10-06 19:06:01,857 - app.services.interview_processor - INFO - Found 5 unprocessed interviews
+2025-10-06 19:06:06,345 - app.services.task_scheduler - INFO - Received signal 2, shutting down gracefully...
+2025-10-06 19:06:06,349 - app.services.task_scheduler - INFO - Task scheduler cancelled
+2025-10-06 19:06:06,349 - app.services.task_scheduler - INFO - Task scheduler stopped
+2025-10-06 19:06:06,351 - app.services.task_scheduler - INFO - Received signal 15, shutting down gracefully...
