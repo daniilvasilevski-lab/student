@@ -163,7 +163,6 @@ class UnifiedLauncher:
             elif "Marked interview as processed" in line:
                 candidate = line.split("Marked interview as processed: ")[1].split(" (Row")[0] if "Marked interview as processed:" in line else "unknown"
                 print(f"{Fore.GREEN}✅ Интервью помечено как обработанное: {candidate}")
-            elif "ERROR" in line.upper() and not any(skip in line for skip in ["Traceback", "asyncio.exceptions"]):
                 # Показываем ошибки, но фильтруем технические детали
                 if "Audio file not found after download" in line:
                     print(f"{Fore.RED}❌ Ошибка: Не удалось скачать/найти аудиофайл")
@@ -232,6 +231,7 @@ class UnifiedLauncher:
                 system_status = self._get_system_status()
                 task_status = self._get_task_status()
                 unprocessed = self._get_unprocessed_count()
+                unprocessed_details = self._get_unprocessed_details()
                 
                 # Очистка экрана для обновления (только статусной части)
                 current_time = datetime.now().strftime('%H:%M:%S')
@@ -241,6 +241,7 @@ class UnifiedLauncher:
                     'system': system_status,
                     'tasks': task_status,
                     'unprocessed': unprocessed,
+                    'unprocessed_details': unprocessed_details,
                     'time': current_time
                 }
                 
@@ -313,6 +314,17 @@ class UnifiedLauncher:
             print(f"   ⏳ Ожидают обработки: {unprocessed} интервью")
         else:
             print(f"   ✅ Очередь пуста - все интервью обработаны")
+        
+        # Показываем детали ожидающих интервью
+        if unprocessed and unprocessed > 0:
+            unprocessed_details = status_info.get('unprocessed_details', [])
+            # Показываем первые 3 интервью для избежания засорения экрана
+            for i, interview in enumerate(unprocessed_details[:3]):
+                name = interview.get('name', 'Неизвестно')
+                interview_id = interview.get('id', 'N/A')
+                print(f"   • {name} (ID: {interview_id})")
+            if len(unprocessed_details) > 3:
+                print(f"   ... и ещё {len(unprocessed_details) - 3} интервью")
     
     def _get_system_status(self) -> Optional[Dict[str, Any]]:
         """Получение статуса системы"""
@@ -336,10 +348,21 @@ class UnifiedLauncher:
             response = requests.get(f"{self.api_url}/api/v1/tasks/unprocessed", timeout=3)
             if response.status_code == 200:
                 data = response.json()
-                return len(data.get('unprocessed_interviews', []))
+                return data.get('count', 0)
             return 0
         except:
             return 0
+    
+    def _get_unprocessed_details(self) -> list:
+        """Получение детальной информации о необработанных интервью"""
+        try:
+            response = requests.get(f"{self.api_url}/api/v1/tasks/unprocessed", timeout=3)
+            if response.status_code == 200:
+                data = response.json()
+                return data.get('interviews', [])
+            return []
+        except:
+            return []
     
     def stop(self):
         """Остановка всей системы"""

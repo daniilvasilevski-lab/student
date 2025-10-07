@@ -71,7 +71,7 @@ class Settings(BaseSettings):
     # === ПЛАНИРОВЩИК ЗАДАЧ ===
     
     scan_interval_minutes: int = 5
-    enable_auto_processing: bool = False
+    enable_auto_processing: bool = True
     
     model_config = {
         "env_file": ".env",
