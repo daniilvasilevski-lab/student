@@ -149,8 +149,17 @@ class TaskScheduler:
     
     def get_status(self) -> Dict[str, Any]:
         """Возвращает статус планировщика"""
+        # Определяем статус планировщика
+        if self.is_running:
+            scheduler_status = "running"
+        elif self.processor is not None:
+            scheduler_status = "stopped"
+        else:
+            scheduler_status = "not_initialized"
+        
         return {
             'is_running': self.is_running,
+            'scheduler_status': scheduler_status,
             'last_scan_time': self.last_scan_time.isoformat() if self.last_scan_time else None,
             'scan_interval_seconds': self.scan_interval,
             'stats': self.stats,
