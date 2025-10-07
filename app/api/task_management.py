@@ -49,6 +49,12 @@ async def get_task_status():
         scheduler = await get_scheduler()
         status = scheduler.get_status()
         
+        # Убеждаемся что статус корректный
+        if status.get("scheduler_status") == "unknown" and scheduler.is_running:
+            status["scheduler_status"] = "running"
+        elif status.get("scheduler_status") == "unknown" and not scheduler.is_running:
+            status["scheduler_status"] = "stopped"
+        
         return {
             "success": True,
             "status": status,
