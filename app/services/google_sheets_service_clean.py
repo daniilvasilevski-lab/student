@@ -27,7 +27,9 @@ class GoogleSheetsService:
         """Обеспечение аутентификации и подключения к Google Sheets"""
         if self.client is None:
             try:
-                # Получение учетных данных из переменных окружения
+                from ..config.settings import settings
+                
+                # Получение учетных данных из настроек
                 creds_json = os.getenv('GOOGLE_CREDENTIALS_JSON')
                 if creds_json:
                     # Загрузка из JSON строки
@@ -38,16 +40,36 @@ class GoogleSheetsService:
                         scopes=['https://spreadsheets.google.com/feeds',
                                'https://www.googleapis.com/auth/drive']
                     )
-                else:
-                    # Загрузка из файла
-                    creds_file = os.getenv('GOOGLE_CREDENTIALS_FILE', 'credentials.json')
+                elif settings.google_service_account_key and os.path.exists(settings.google_service_account_key):
+                    # Загрузка из файла с учетными данными
                     self.credentials = Credentials.from_service_account_file(
-                        creds_file,
+                        settings.google_service_account_key,
                         scopes=['https://spreadsheets.google.com/feeds',
                                'https://www.googleapis.com/auth/drive']
                     )
+                else:
+                    # Попытка загрузки из стандартного файла
+                    possible_paths = [
+                        '/home/daniil/serverhr/python-interview-analyzer/google_credentials.json',
+                        'google_credentials.json',
+                        'credentials.json'
+                    ]
+                    
+                    for path in possible_paths:
+                        if os.path.exists(path):
+                            logger.info(f"Using credentials from: {path}")
+                            self.credentials = Credentials.from_service_account_file(
+                                path,
+                                scopes=['https://spreadsheets.google.com/feeds',
+                                       'https://www.googleapis.com/auth/drive']
+                            )
+                            break
+                    
+                    if not self.credentials:
+                        raise Exception("No valid Google credentials found. Please check GOOGLE_SERVICE_ACCOUNT_KEY setting.")
                 
                 self.client = gspread.authorize(self.credentials)
+                logger.info("Google Sheets authentication successful")
                 logger.info("Google Sheets authentication successful")
                 
             except Exception as e:
