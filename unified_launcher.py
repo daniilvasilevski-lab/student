@@ -20,28 +20,32 @@ try:
     init(autoreset=True)
 except ImportError:
     # Fallback без цветов
+
+
     class MockColor:
-        def __getattr__(self, name): return ""
+        def __getattr__(self, name):
+            return ""
     Fore = Back = Style = MockColor()
+
 
 class UnifiedLauncher:
     """Единый launcher для запуска всей системы"""
-    
+
     def __init__(self):
         self.server_process: Optional[subprocess.Popen] = None
         self.api_url = "http://localhost:8000"
         self.running = False
         self.auto_processing_started = False
-        
+
         # Настройка обработки сигналов
         signal.signal(signal.SIGINT, self._signal_handler)
         signal.signal(signal.SIGTERM, self._signal_handler)
-    
+
     def _signal_handler(self, signum, frame):
         """Обработка сигналов для корректного завершения"""
         print(f"\n{Fore.YELLOW}📤 Получен сигнал завершения...")
         self.stop()
-    
+
     def start(self):
         """Запуск всей системы"""
         print(f"{Fore.CYAN}{Style.BRIGHT}{'='*80}")
@@ -51,34 +55,34 @@ class UnifiedLauncher:
         print(f"{Fore.GREEN}📍 API: {self.api_url}")
         print(f"{Fore.YELLOW}💡 Для остановки нажмите Ctrl+C")
         print(f"{Fore.CYAN}{'='*80}\n")
-        
+
         # Запуск сервера
         self._start_server()
-        
+
         # Ожидание готовности сервера
         self._wait_for_server()
-        
+
         # Автозапуск обработки
         self._start_auto_processing()
-        
+
         # Запуск мониторинга
         self.running = True
         self._run_monitoring()
-    
+
     def _start_server(self):
         """Запуск FastAPI сервера"""
         print(f"{Fore.YELLOW}🔄 Запуск FastAPI сервера...")
-        
+
         try:
             # Команда запуска сервера
             cmd = [
-                sys.executable, "-m", "uvicorn", 
-                "app.main:app", 
-                "--host", "0.0.0.0", 
+                sys.executable, "-m", "uvicorn",
+                "app.main:app",
+                "--host", "0.0.0.0",
                 "--port", "8000",
                 "--log-level", "info"
             ]
-            
+
             # Запуск процесса
             self.server_process = subprocess.Popen(
                 cmd,
@@ -87,33 +91,33 @@ class UnifiedLauncher:
                 universal_newlines=True,
                 bufsize=1
             )
-            
+
             # Запуск потока для чтения логов сервера
             log_thread = threading.Thread(
-                target=self._read_server_logs, 
+                target=self._read_server_logs,
                 daemon=True
             )
             log_thread.start()
-            
+
             print(f"{Fore.GREEN}✅ Сервер запущен (PID: {self.server_process.pid})")
-            
+
         except Exception as e:
             print(f"{Fore.RED}❌ Ошибка запуска сервера: {e}")
             sys.exit(1)
-    
+
     def _read_server_logs(self):
         """Чтение и фильтрация логов сервера"""
         if not self.server_process:
             return
-            
+
         for line in iter(self.server_process.stdout.readline, ''):
             if not line:
                 break
-                
+
             line = line.strip()
             if not line:
                 continue
-                
+
             # Фильтрация и красивое отображение важных логов
             if "Results Google Sheets service initialized successfully" in line:
                 print(f"{Fore.GREEN}📊 Google Sheets сервис инициализирован")
@@ -184,11 +188,11 @@ class UnifiedLauncher:
                     print(f"{Fore.GREEN}✅ Приложение инициализировано")
                 elif "Uvicorn running" in line:
                     print(f"{Fore.GREEN}🌐 API доступен на http://0.0.0.0:8000")
-    
+
     def _wait_for_server(self):
         """Ожидание готовности сервера"""
         print(f"{Fore.YELLOW}⏳ Ожидание готовности сервера...")
-        
+
         max_attempts = 30
         for attempt in range(max_attempts):
             try:
@@ -198,13 +202,13 @@ class UnifiedLauncher:
                     return
             except requests.exceptions.RequestException:
                 pass
-            
+
             time.sleep(1)
             print(f"{Fore.YELLOW}⏳ Попытка {attempt + 1}/{max_attempts}...")
-        
+
         print(f"{Fore.RED}❌ Сервер не отвечает после {max_attempts} попыток")
         sys.exit(1)
-    
+
     def _start_auto_processing(self):
         """Автозапуск обработки"""
         try:
@@ -216,7 +220,7 @@ class UnifiedLauncher:
                 print(f"{Fore.YELLOW}⚠️  Не удалось запустить автообработку: {response.text}")
         except Exception as e:
             print(f"{Fore.YELLOW}⚠️  Ошибка запуска автообработки: {e}")
-    
+
     def _run_monitoring(self):
         """Основной цикл мониторинга с новой логикой"""
         print(f"{Fore.CYAN}{'='*80}")
@@ -263,12 +267,12 @@ class UnifiedLauncher:
         print(f"\n{Fore.CYAN}{'─'*60}")
         print(f"{Fore.CYAN}⏰ Обновление: {status_info['time']}")
         print(f"{Fore.CYAN}{'─'*60}")
-        
+
         # Статус системы
         system = status_info['system']
         if system and system.get('status') == 'healthy':
             print(f"{Fore.GREEN}🖥️  Система: Работает нормально")
-            
+
             # Компоненты
             components = system.get('components', {})
             for name, status in components.items():
@@ -276,7 +280,7 @@ class UnifiedLauncher:
                 print(f"   {icon} {name}: {status}")
         else:
             print(f"{Fore.RED}🖥️  Система: Недоступна")
-        
+
         # Статус задач
         tasks = status_info['tasks']
         if tasks:
@@ -285,24 +289,24 @@ class UnifiedLauncher:
             active_tasks = tasks.get('active_tasks', 0)
             completed_tasks = tasks.get('completed_tasks', 0)
             failed_tasks = tasks.get('failed_tasks', 0)
-            
+
             print(f"\n{Fore.BLUE}⚙️  Задачи:")
-            
+
             # Статус планировщика
             scheduler_icon = "✅" if scheduler_status == "running" else "❌"
             print(f"   {scheduler_icon} Планировщик: {scheduler_status}")
-            
+
             # Автообработка
             auto_icon = "✅" if auto_processing else "❌"
             auto_text = "Включена" if auto_processing else "Выключена"
             print(f"   {auto_icon} Автообработка: {auto_text}")
-            
+
             # Статистика задач
             print(f"   📈 Активные: {active_tasks}")
             print(f"   ✅ Завершенные: {completed_tasks}")
             if failed_tasks > 0:
                 print(f"   ❌ Неудачные: {failed_tasks}")
-        
+
         # Очередь обработки
         unprocessed = status_info['unprocessed']
         print(f"\n{Fore.MAGENTA}📋 Очередь:")
@@ -310,7 +314,7 @@ class UnifiedLauncher:
             print(f"   ⏳ Ожидают обработки: {unprocessed} интервью")
         else:
             print(f"   ✅ Очередь пуста - все интервью обработаны")
-        
+
         # Показываем детали ожидающих интервью
         if unprocessed and unprocessed > 0:
             unprocessed_details = status_info.get('unprocessed_details', [])
@@ -321,23 +325,23 @@ class UnifiedLauncher:
                 print(f"   • {name} (ID: {interview_id})")
             if len(unprocessed_details) > 3:
                 print(f"   ... и ещё {len(unprocessed_details) - 3} интервью")
-    
+
     def _get_system_status(self) -> Optional[Dict[str, Any]]:
         """Получение статуса системы"""
         try:
             response = requests.get(f"{self.api_url}/health", timeout=3)
             return response.json() if response.status_code == 200 else None
-        except:
+        except Exception:
             return None
-    
+
     def _get_task_status(self) -> Optional[Dict[str, Any]]:
         """Получение статуса задач"""
         try:
             response = requests.get(f"{self.api_url}/api/v1/tasks/status", timeout=3)
             return response.json() if response.status_code == 200 else None
-        except:
+        except Exception:
             return None
-    
+
     def _get_unprocessed_count(self) -> int:
         """Получение количества необработанных интервью"""
         try:
@@ -346,9 +350,9 @@ class UnifiedLauncher:
                 data = response.json()
                 return data.get('count', 0)
             return 0
-        except:
+        except Exception:
             return 0
-    
+
     def _get_unprocessed_details(self) -> list:
         """Получение детальной информации о необработанных интервью"""
         try:
@@ -357,9 +361,9 @@ class UnifiedLauncher:
                 data = response.json()
                 return data.get('interviews', [])
             return []
-        except:
+        except Exception:
             return []
-    
+
     def _display_system_status(self):
         """Отображение статуса системы"""
         try:
@@ -368,23 +372,23 @@ class UnifiedLauncher:
             task_status = self._get_task_status()
             unprocessed_count = self._get_unprocessed_count()
             current_time = datetime.now().strftime('%H:%M:%S')
-            
+
             print(f"\n{Fore.CYAN}{'─'*60}")
             print(f"{Fore.CYAN}⏰ Статус системы: {current_time}")
             print(f"{Fore.CYAN}{'─'*60}")
-            
+
             # Система
             if system_status and system_status.get('success'):
                 print(f"🖥️  Система: {Fore.GREEN}Работает нормально")
             else:
                 print(f"🖥️  Система: {Fore.RED}Недоступна")
-            
+
             # Планировщик
             if task_status and task_status.get('success'):
                 status_data = task_status.get('status', {})
                 scheduler_status = status_data.get('scheduler_status', 'unknown')
                 auto_processing = task_status.get('auto_processing_enabled', False)
-                
+
                 if scheduler_status == 'running':
                     scheduler_icon = "✅"
                     scheduler_text = "Работает"
@@ -394,42 +398,42 @@ class UnifiedLauncher:
                 else:
                     scheduler_icon = "❌"
                     scheduler_text = "Неинициализирован"
-                
+
                 print(f"⚙️  Планировщик: {scheduler_icon} {scheduler_text}")
-                
+
                 auto_icon = "✅" if auto_processing else "❌"
                 auto_text = "Включена" if auto_processing else "Выключена"
                 print(f"🔄 Автообработка: {auto_icon} {auto_text}")
             else:
                 print(f"⚙️  Планировщик: {Fore.RED}Недоступен")
-            
+
             # Очередь
             print(f"📋 Очередь: ", end="")
             if unprocessed_count > 0:
                 print(f"{Fore.YELLOW}{unprocessed_count} интервью ожидают обработки")
             else:
                 print(f"{Fore.GREEN}Пуста")
-            
+
             print(f"{Fore.CYAN}{'─'*60}")
-            
+
         except Exception as e:
             print(f"{Fore.RED}❌ Ошибка получения статуса: {e}")
-    
+
     def _process_candidates_with_progress(self, candidates):
         """Обработка кандидатов с показом прогресса"""
         if not candidates:
             return
-        
+
         total = len(candidates)
         print(f"\n{Fore.CYAN}📊 Прогресс обработки:")
         print(f"{Fore.CYAN}{'─'*40}")
-        
+
         for i, candidate in enumerate(candidates, 1):
             name = candidate.get('name', 'Неизвестно')
             candidate_id = candidate.get('id', 'N/A')
-            
+
             print(f"{Fore.YELLOW}⏳ [{i}/{total}] Обрабатывается: {name} (ID: {candidate_id})")
-            
+
             # Запускаем обработку через API
             try:
                 response = requests.post(f"{self.api_url}/api/v1/tasks/process/{candidate_id}", timeout=300)
@@ -441,51 +445,51 @@ class UnifiedLauncher:
                         print(f"{Fore.RED}❌ [{i}/{total}] Ошибка: {name} - {result.get('error', 'Неизвестная ошибка')}")
                 else:
                     print(f"{Fore.RED}❌ [{i}/{total}] HTTP ошибка: {name} - {response.status_code}")
-                    
+
             except requests.exceptions.Timeout:
                 print(f"{Fore.RED}❌ [{i}/{total}] Таймаут: {name}")
             except Exception as e:
                 print(f"{Fore.RED}❌ [{i}/{total}] Исключение: {name} - {str(e)}")
-        
+
         print(f"{Fore.CYAN}{'─'*40}")
         print(f"{Fore.GREEN}📊 Обработка завершена: {total} интервью")
-    
+
     def _countdown_wait(self, seconds):
         """Обратный отсчет с возможностью прерывания"""
         print(f"{Fore.BLUE}⏳ Ожидание {seconds} секунд (Ctrl+C для остановки)...")
-        
+
         for remaining in range(seconds, 0, -1):
             if not self.running:
                 break
-            
+
             if remaining % 10 == 0 or remaining <= 5:
                 print(f"{Fore.BLUE}⏳ Осталось: {remaining} сек", end="\r")
-            
+
             time.sleep(1)
-        
+
         if self.running:
             print(f"{Fore.BLUE}⏳ Ожидание завершено." + " " * 20)
-    
+
     def stop(self):
         """Остановка всей системы"""
         print(f"\n{Fore.YELLOW}🛑 Остановка системы...")
-        
+
         # Остановка мониторинга
         self.running = False
-        
+
         # Остановка автообработки
         if self.auto_processing_started:
             try:
                 requests.post(f"{self.api_url}/api/v1/tasks/stop", timeout=3)
                 print(f"{Fore.GREEN}✅ Автообработка остановлена")
-            except:
+            except Exception:
                 pass
-        
+
         # Остановка сервера
         if self.server_process:
             print(f"{Fore.YELLOW}🔄 Завершение сервера...")
             self.server_process.terminate()
-            
+
             # Ждем корректного завершения
             try:
                 self.server_process.wait(timeout=10)
@@ -494,11 +498,12 @@ class UnifiedLauncher:
                 print(f"{Fore.YELLOW}⚠️  Принудительное завершение сервера...")
                 self.server_process.kill()
                 self.server_process.wait()
-        
+
         print(f"{Fore.CYAN}{'='*80}")
         print(f"{Fore.CYAN}{Style.BRIGHT}👋 СИСТЕМА ОСТАНОВЛЕНА")
         print(f"{Fore.CYAN}{'='*80}")
         sys.exit(0)
+
 
 def main():
     """Главная функция"""
@@ -506,16 +511,16 @@ def main():
     if not os.path.exists("app/main.py"):
         print(f"{Fore.RED}❌ Запустите скрипт из корня проекта (где находится app/main.py)")
         sys.exit(1)
-    
+
     # Проверка виртуального окружения
     if not hasattr(sys, 'real_prefix') and not (hasattr(sys, 'base_prefix') and sys.base_prefix != sys.prefix):
         print(f"{Fore.YELLOW}⚠️  ВНИМАНИЕ: Виртуальное окружение не активировано!")
         print(f"{Fore.YELLOW}   Рекомендуется запустить: source venv/bin/activate")
         print(f"{Fore.YELLOW}   Продолжить? (y/n): ", end='')
-        
+
         if input().lower() != 'y':
             sys.exit(1)
-    
+
     # Запуск системы
     launcher = UnifiedLauncher()
     try:
@@ -525,6 +530,7 @@ def main():
     except Exception as e:
         print(f"{Fore.RED}❌ Критическая ошибка: {e}")
         launcher.stop()
+
 
 if __name__ == "__main__":
     main()
